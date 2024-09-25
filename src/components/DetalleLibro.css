@@ -1,0 +1,92 @@
+.detalle-libro-container {
+    max-width: 90%;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    font-family: 'Arial', sans-serif;
+}
+
+.detalle-libro-titulo {
+    font-size: 28px;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.detalle-libro-info p {
+    font-size: 16px;
+    margin: 10px 0;
+    color: #555;
+}
+
+.detalle-libro-info strong {
+    color: #333;
+}
+
+.detalle-libro-portada {
+    display: flex;
+    justify-content: left;
+    margin: 20px 0;
+}
+
+.portada-imagen {
+    max-width: 100%;
+    height: auto;
+    border-radius: 4px;
+    text-align: left;
+}
+img {
+    border-radius: 4px;
+    max-width: 100px;
+    height: auto;
+}
+
+img:hover {
+    transform: scale(1);
+}
+
+.sin-portada {
+    font-size: 14px;
+    color: #888;
+    text-align: center;
+}
+
+.detalle-libro-acciones {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.boton-actualizar,
+.boton-eliminar {
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    text-decoration: none;
+    margin-right: 10px;
+    width: 50%;
+}
+
+.boton-actualizar {
+    background-color: #4CAF50;
+    color: white;
+    margin-right: 10px;
+}
+
+.boton-eliminar {
+    background-color: #f44336;
+    color: white;
+}
+
+.boton-actualizar:hover {
+    background-color: #45a049;
+}
+
+.boton-eliminar:hover {
+    background-color: #e41f1f;
+}

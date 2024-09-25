@@ -1,0 +1,73 @@
+.buscar-libros {
+    padding: 20px;
+    max-width: 100%;
+    margin: auto;
+}
+
+.input-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: start;
+    margin-bottom: 20px;
+}
+
+.input-container label {
+    flex: 0 20%;
+    /* Ocupa el 30% del ancho de la línea */
+    margin-right: 10px;
+    font-weight: bold;
+}
+
+.input-container input {
+    flex: 1 1 60%;
+    /* Ajustar a 60% para dar más espacio al input */
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin-bottom: 10px;
+}
+
+/* Asegúrate de que los márgenes de los inputs y labels sean consistentes */
+.input-container label:last-child {
+    margin-right: 0;
+    /* Elimina margen derecho en el último label */
+}
+
+.buscar-button {
+    width: 30%;
+    /* 30% del ancho en escritorio */
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
+    background-color: #007bff;
+    /* Color de fondo */
+    color: white;
+    /* Color del texto */
+    cursor: pointer;
+    transition: background-color 0.3s;
+    margin: 0 auto;
+    /* Centrar el botón */
+    display: block;
+    /* Hacer que el botón sea un bloque para centrarlo */
+}
+
+.buscar-button:hover {
+    background-color: #0056b3;
+    /* Color al pasar el mouse */
+}
+
+/* Estilos responsivos */
+@media (max-width: 768px) {
+
+
+    .input-container {
+        display: block;
+        margin-bottom: 20px;
+        max-width: 100%;
+    }
+
+    .buscar-button {
+        width: 100%;
+        /* Ocupa el 90% del ancho en tablet y móviles */
+    }
+}

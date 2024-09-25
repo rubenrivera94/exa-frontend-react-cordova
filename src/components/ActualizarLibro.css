@@ -1,0 +1,165 @@
+.form-container {
+    max-width: 600px;
+    /* Ancho máximo del contenedor del formulario */
+    width: 90%;
+    /* Ancho del formulario para dispositivos más pequeños */
+    margin: 20px auto;
+    /* Margen superior para separar del borde superior */
+    padding: 20px;
+    /* Espaciado interno */
+    background-color: #fff;
+    /* Color de fondo del formulario */
+    border-radius: 8px;
+    /* Bordes redondeados */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    /* Sombra del formulario */
+    box-sizing: border-box;
+    /* Incluir el padding y el borde en el tamaño total */
+}
+
+h2 {
+    text-align: center;
+    /* Centrar título */
+    font-family: 'Roboto', sans-serif;
+    /* Fuente del título */
+    color: #333;
+    /* Color del texto */
+    margin-bottom: 20px;
+    /* Espacio debajo del título */
+}
+
+label {
+    display: block;
+    /* Mostrar etiquetas como bloques */
+    font-family: 'Roboto', sans-serif;
+    /* Fuente de las etiquetas */
+    margin-bottom: 8px;
+    /* Espacio debajo de las etiquetas */
+    color: #555;
+    /* Color del texto de las etiquetas */
+    font-weight: 500;
+    /* Peso de la fuente */
+}
+
+input[type="text"],
+input[type="number"],
+input[type="file"] {
+    width: 100%;
+    /* Ancho completo del input */
+    padding: 10px;
+    /* Espaciado interno */
+    margin-bottom: 15px;
+    /* Espacio entre campos */
+    border: 1px solid #ccc;
+    /* Borde de los inputs */
+    border-radius: 4px;
+    /* Bordes redondeados en los inputs */
+    font-family: 'Roboto', sans-serif;
+    /* Fuente de los inputs */
+    font-size: 14px;
+    /* Tamaño de fuente */
+    transition: border-color 0.3s;
+    /* Transición suave del borde */
+    box-sizing: border-box;
+    /* Incluir el padding y el borde en el tamaño total */
+}
+
+input[type="text"]:focus,
+input[type="number"]:focus {
+    border-color: #007BFF;
+    /* Color del borde al enfocar */
+    outline: none;
+    /* Sin borde adicional */
+}
+
+button {
+    width: 100%;
+    /* Botón con ancho completo */
+    padding: 10px;
+    /* Espaciado interno del botón */
+    background-color: #007BFF;
+    /* Color de fondo del botón */
+    color: white;
+    /* Color del texto del botón */
+    border: none;
+    /* Sin borde */
+    border-radius: 4px;
+    /* Bordes redondeados del botón */
+    font-size: 16px;
+    /* Tamaño de fuente del botón */
+    font-family: 'Roboto', sans-serif;
+    /* Fuente del botón */
+    cursor: pointer;
+    /* Cambiar cursor al pasar por encima */
+    transition: background-color 0.3s;
+    /* Transición suave del color de fondo */
+}
+
+button:hover {
+    background-color: #0056b3;
+    /* Color de fondo al pasar el mouse */
+}
+
+.error-message {
+    color: #e74c3c;
+    /* Color del mensaje de error */
+    font-size: 12px;
+    /* Tamaño de fuente del mensaje de error */
+    margin-top: -10px;
+    /* Espacio arriba del mensaje de error */
+    margin-bottom: 10px;
+    /* Espacio debajo del mensaje de error */
+}
+
+.success-message {
+    color: #2ecc71;
+    /* Color del mensaje de éxito */
+    font-size: 14px;
+    /* Tamaño de fuente del mensaje de éxito */
+    margin-top: 10px;
+    /* Espacio arriba del mensaje de éxito */
+    text-align: center;
+    /* Centrar el mensaje de éxito */
+}
+
+img {
+    border-radius: 4px;
+    max-width: 100px;
+    height: auto;
+}
+
+img:hover {
+    transform: scale(1.2);
+}
+
+/* Estilos adicionales para mejorar la responsividad */
+@media (max-width: 768px) {
+    .form-container {
+        padding: 15px;
+        /* Espaciado interno para tabletas y móviles */
+    }
+
+    h2 {
+        font-size: 1.5em;
+        /* Tamaño de fuente del título para móviles */
+    }
+
+    button {
+        font-size: 14px;
+        /* Tamaño de fuente del botón para móviles */
+    }
+}
+
+@media (max-width: 480px) {
+    h2 {
+        font-size: 1.3em;
+        /* Tamaño de fuente más pequeño para móviles */
+    }
+
+    input[type="text"],
+    input[type="number"],
+    input[type="file"] {
+        font-size: 12px;
+        /* Tamaño de fuente más pequeño para inputs en móviles */
+    }
+}
